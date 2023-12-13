@@ -4,7 +4,7 @@
   "description": "Dynamic bundles custom application",
   "private": true,
   "scripts": {
-    "build": "mc-scripts build",
+    "build": "NODE_OPTIONS=--max-old-space-size=1024 mc-scripts build",
     "start": "mc-scripts start",
     "compile-html:local": "NODE_ENV=production MC_APP_ENV=development  mc-scripts compile-html --transformer @commercetools-frontend/mc-dev-authentication/transformer-local.js",
     "start:prod:local": "yarn compile-html:local && mc-scripts serve",
