@@ -1,8 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 import { useMutation } from '@apollo/client';
-import { useApplicationContext } from '@commercetools-frontend/application-shell-connectors';
 import { GRAPHQL_TARGETS } from '@commercetools-frontend/constants';
 import {
   ExternalLinkIcon,
@@ -27,8 +25,6 @@ const BundleImages = ({
   actions,
   noImagesMessage,
 }) => {
-  const { environment } = useApplicationContext();
-  const { frontendHost } = environment;
   const intl = useIntl();
   const showErrorNotification = useShowSideNotification(
     'error',
@@ -39,7 +35,7 @@ const BundleImages = ({
     onError: showErrorNotification,
   });
 
-  const mcImageUrl = `https://${frontendHost}/${match.params.projectKey}/products/${id}/variants/${MASTER_VARIANT_ID}/images`;
+  const mcImageUrl = `/${match.params.projectKey}/products/${id}/variants/${MASTER_VARIANT_ID}/images`;
 
   function addImage() {
     window.open(`${mcImageUrl}/new`, '_blank');
