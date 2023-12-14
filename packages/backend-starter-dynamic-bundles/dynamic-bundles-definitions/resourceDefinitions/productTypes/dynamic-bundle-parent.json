@@ -25,6 +25,23 @@
       "displayGroup": "Other"
     },
     {
+      "name": "category-search",
+      "label": {
+        "en": "Category Search"
+      },
+      "isRequired": false,
+      "type": {
+        "name": "set",
+        "elementType": {
+          "name": "text"
+        }
+      },
+      "attributeConstraint": "None",
+      "isSearchable": true,
+      "inputHint": "SingleLine",
+      "displayGroup": "Other"
+    },
+    {
       "name": "min-quantity",
       "label": {
         "en": "Minimum Quantity"

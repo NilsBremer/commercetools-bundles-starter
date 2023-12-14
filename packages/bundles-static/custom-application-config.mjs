@@ -14,12 +14,12 @@ const config = {
     },
   },
   oAuthScopes: {
-    view: ['view_products'],
+    view: ['view_products', 'view_customer_groups'],
     manage: ['manage_products'],
   },
   icon: '${path:@commercetools-frontend/assets/application-icons/rocket.svg}',
   mainMenuLink: {
-    defaultLabel: 'Bundles',
+    defaultLabel: 'Static Bundles',
     permissions: [PERMISSIONS.View],
     labelAllLocales: [],
   },

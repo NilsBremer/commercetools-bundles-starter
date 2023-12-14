@@ -1,9 +1,9 @@
 import { entryPointUriPathToPermissionKeys } from '@commercetools-frontend/application-shell/ssr';
 
-const ROOT_PATH = 'bundles-static';
+const ROOT_PATH = 'static-bundle-manager';
 const BUNDLE_PRODUCT_TYPE = 'static-bundle-parent';
 const MASTER_VARIANT_ID = 1;
-const entryPointUriPath = 'bundles-static';
+const entryPointUriPath = 'static-bundle-manager';
 
 const PERMISSIONS = entryPointUriPathToPermissionKeys(entryPointUriPath);
 
